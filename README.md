@@ -1,6 +1,6 @@
 # VulnNote — Intentionally Vulnerable PHP App
 
-A deliberately vulnerable PHP web application built as a **scan target** for the [secure-pipeline-lab](https://github.com/Snozye/secure-pipeline-lab) AppSec CI/CD pipeline.
+A deliberately vulnerable PHP web application designed as a scan target for an AppSec CI/CD pipeline.
 
 > **Warning:** This application contains deliberate security vulnerabilities. Run only in isolated environments. Never expose to the internet.
 
@@ -8,9 +8,9 @@ A deliberately vulnerable PHP web application built as a **scan target** for the
 
 ## Context
 
-This app was generated with the help of Claude AI as a realistic scan target to validate the security pipeline. The goal was to have a PHP application with a broad set of classic web vulnerabilities — covering OWASP Top 10 categories — so that each tool in the pipeline (Semgrep, Gitleaks, Trivy, OWASP ZAP) has something meaningful to find and report.
+This app was generated with the help of Claude AI as a realistic scan target to validate a security pipeline. The goal was to have a PHP application with a broad set of classic web vulnerabilities — covering OWASP Top 10 categories — so that each security tool in the pipeline has something meaningful to find and report.
 
-The pipeline runs on every PR and posts findings directly as PR comments. VulnNote is the application being scanned.
+The pipeline runs on every PR and posts findings directly as PR comments.
 
 ---
 
@@ -60,7 +60,7 @@ The pipeline runs on every PR and posts findings directly as PR comments. VulnNo
 ## Run locally
 
 ```bash
-cd vulnerable.com
+cd vulnNote
 php -S localhost:8080
 ```
 
